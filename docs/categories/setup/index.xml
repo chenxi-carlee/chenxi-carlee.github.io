@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Chealsia&#39;s Tech Blog</title>
-        <link>http://localhost:1313/</link>
-        <description>Recent content on Chealsia&#39;s Tech Blog</description>
+        <title>Setup on Chealsia&#39;s Tech Blog</title>
+        <link>http://localhost:1313/categories/setup/</link>
+        <description>Recent content in Setup on Chealsia&#39;s Tech Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 06 Feb 2026 15:01:06 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 06 Feb 2026 15:01:06 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/setup/index.xml" rel="self" type="application/rss+xml" /><item>
             <title>Setting Up My First Tech Blog with Hugo and GitHub Pages</title>
             <link>http://localhost:1313/posts/my-first-post/</link>
             <pubDate>Fri, 06 Feb 2026 15:01:06 +0000</pubDate>

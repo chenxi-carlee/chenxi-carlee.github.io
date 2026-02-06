@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Hugo + GitHub Pages\nPrerequisites\rGit installed A GitHub account Hugo installed Step 1: Install Hugo\rOn Windows: Download from winget, see link for more details\nwinget install Hugo.Hugo.Extended Step 2: Create a New Hugo Site\rhugo new site myblog cd myblog This creates the basic Hugo directory structure:\nmyblog/ ├── archetypes/ ├── content/ # Your posts go here ├── data/ ├── layouts/ ├── static/ # Images, CSS, etc. ├── themes/ # Themes folder └── hugo.toml # Configuration file Step 3: Choose and Install a Theme\rI chose the Hugo Stack theme for its clean design and good documentation support.\n">
+<title>Setting Up My First Tech Blog with Hugo and GitHub Pages</title>
+
+<link rel='canonical' href='http://localhost:1313/posts/my-first-post/'>
+
+<link rel="stylesheet" href="/scss/style.min.12cc436ab5f8511a88ba664cf1ef0912660ff4b5b07ea9078eb9fd7832b1e898.css"><meta property='og:title' content="Setting Up My First Tech Blog with Hugo and GitHub Pages">
+<meta property='og:description' content="Hugo + GitHub Pages\nPrerequisites\rGit installed A GitHub account Hugo installed Step 1: Install Hugo\rOn Windows: Download from winget, see link for more details\nwinget install Hugo.Hugo.Extended Step 2: Create a New Hugo Site\rhugo new site myblog cd myblog This creates the basic Hugo directory structure:\nmyblog/ ├── archetypes/ ├── content/ # Your posts go here ├── data/ ├── layouts/ ├── static/ # Images, CSS, etc. ├── themes/ # Themes folder └── hugo.toml # Configuration file Step 3: Choose and Install a Theme\rI chose the Hugo Stack theme for its clean design and good documentation support.\n">
+<meta property='og:url' content='http://localhost:1313/posts/my-first-post/'>
+<meta property='og:site_name' content='Chealsia&#39;s Tech Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='hugo' /><meta property='article:tag' content='github-pages' /><meta property='article:tag' content='blog' /><meta property='article:tag' content='tutorial' /><meta property='article:published_time' content='2026-02-06T15:01:06&#43;00:00'/><meta property='article:modified_time' content='2026-02-06T15:01:06&#43;00:00'/>
+<meta name="twitter:title" content="Setting Up My First Tech Blog with Hugo and GitHub Pages">
+<meta name="twitter:description" content="Hugo + GitHub Pages\nPrerequisites\rGit installed A GitHub account Hugo installed Step 1: Install Hugo\rOn Windows: Download from winget, see link for more details\nwinget install Hugo.Hugo.Extended Step 2: Create a New Hugo Site\rhugo new site myblog cd myblog This creates the basic Hugo directory structure:\nmyblog/ ├── archetypes/ ├── content/ # Your posts go here ├── data/ ├── layouts/ ├── static/ # Images, CSS, etc. ├── themes/ # Themes folder └── hugo.toml # Configuration file Step 3: Choose and Install a Theme\rI chose the Hugo Stack theme for its clean design and good documentation support.\n">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Chealsia&#39;s Tech Blog</a></h1>
+            <h2 class="site-description">Learning, Building, Sharing</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+            
+            
+            <a href="/categories/setup/" style="background-color: hsl(350, 60%, 84%); color: hsl(350, 60%, 15%);">
+                Setup
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/my-first-post/">Setting Up My First Tech Blog with Hugo and GitHub Pages</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-02-06T15:01:06Z'>Friday, February 6, 2026</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minutes read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <section class="article-content">
+    
+    
+    <p>Hugo + GitHub Pages</p>
+<h2 id="prerequisites">Prerequisites
+</h2><ul>
+<li>Git installed</li>
+<li>A GitHub account</li>
+<li>Hugo installed</li>
+</ul>
+<h2 id="step-1-install-hugo">Step 1: Install Hugo
+</h2><p><strong>On Windows:</strong> Download from winget, see <a class="link" href="https://gohugo.io/installation/windows/"  target="_blank" rel="noopener"
+    >link</a> for more details</p>
+<pre tabindex="0"><code>winget install Hugo.Hugo.Extended
+</code></pre><h2 id="step-2-create-a-new-hugo-site">Step 2: Create a New Hugo Site
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site myblog
+</span></span><span style="display:flex;"><span>cd myblog
+</span></span></code></pre></div><p>This creates the basic Hugo directory structure:</p>
+<pre tabindex="0"><code>myblog/
+├── archetypes/
+├── content/      # Your posts go here
+├── data/
+├── layouts/
+├── static/       # Images, CSS, etc.
+├── themes/       # Themes folder
+└── hugo.toml     # Configuration file
+</code></pre><h2 id="step-3-choose-and-install-a-theme">Step 3: Choose and Install a Theme
+</h2><p>I chose the <a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack"  target="_blank" rel="noopener"
+    >Hugo Stack theme</a> for its clean design and good documentation support.</p>
+<p>Install the theme as a git submodule:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack
+</span></span></code></pre></div><h2 id="step-4-configure-your-site">Step 4: Configure Your Site
+</h2><p>Edit <code>hugo.toml</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://your-username.github.io/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;Your Blog Title&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;hugo-theme-stack&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">publishDir</span> = <span style="color:#e6db74">&#39;docs&#39;</span>  <span style="color:#75715e"># Important for GitHub Pages!</span>
+</span></span></code></pre></div><p><strong>Important:</strong> Setting <code>publishDir = 'docs'</code> is crucial because GitHub Pages only supports deploying from root or <code>/docs</code> folder.</p>
+<h2 id="step-5-test-locally">Step 5: Test Locally
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -D
+</span></span></code></pre></div><p>Open <code>http://localhost:1313</code> in your browser. You should see your site!</p>
+<h2 id="step-6-create-github-repository">Step 6: Create GitHub Repository
+</h2><ol>
+<li>Go to GitHub and create a new repository</li>
+<li>Name it <code>your-username.github.io</code> (replace with your actual username)</li>
+</ol>
+<h2 id="step-7-connect-local-to-github">Step 7: Connect Local to GitHub
+</h2><p>Initialize git and connect to remote:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Initial blog setup&#34;</span>
+</span></span></code></pre></div><p>Add remote repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin https://github.com/your-username/your-username.github.io.git
+</span></span></code></pre></div><h2 id="step-8-generate-and-deploy">Step 8: Generate and Deploy
+</h2><p>Generate the static site:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><p>This creates your website in the <code>docs/</code> folder.</p>
+<p>Push to GitHub:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add generated site&#34;</span>
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div><h2 id="step-9-enable-github-pages">Step 9: Enable GitHub Pages
+</h2><ol>
+<li>Go to your repository on GitHub</li>
+<li>Click <strong>Settings</strong> → <strong>Pages</strong></li>
+<li>Under <strong>Source</strong>:
+<ul>
+<li>Branch: <code>main</code></li>
+<li>Folder: <code>/docs</code></li>
+</ul>
+</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<p>Wait 1-2 minutes for deployment. Your site will be live at <code>https://your-username.github.io/</code>!</p>
+<h2 id="common-issues-i-encountered">Common Issues I Encountered
+</h2><h3 id="issue-1-404-page-not-found">Issue 1: 404 Page Not Found
+</h3><p><strong>Problem:</strong> Site showed 404 after deployment.</p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>Ensure <code>publishDir = 'docs'</code> is set in <code>hugo.toml</code></li>
+<li>Run <code>hugo</code> to generate the site</li>
+<li>Check GitHub Pages settings point to <code>/docs</code> folder</li>
+<li>Make sure <code>docs/index.html</code> exists</li>
+</ul>
+<h2 id="writing-your-first-post">Writing Your First Post
+</h2><p>Create a new post:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new content/posts/my-first-post.md
+</span></span></code></pre></div><p>Edit the file and set <code>draft: false</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;My First Post&#34;
+</span></span><span style="display:flex;"><span>date: 2026-02-06
+</span></span><span style="display:flex;"><span>draft: false
+</span></span><span style="display:flex;"><span>tags: [&#34;hello&#34;]
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Your content here...
+</span></span></code></pre></div><h2 id="publishing-workflow">Publishing Workflow
+</h2><p>My typical workflow for new posts:</p>
+<ol>
+<li><strong>Create post:</strong> <code>hugo new content/posts/post-name.md</code></li>
+<li><strong>Write content</strong> in your favorite editor</li>
+<li><strong>Preview locally:</strong> <code>hugo server -D</code></li>
+<li><strong>Generate site:</strong> <code>hugo</code></li>
+<li><strong>Deploy:</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add new post: post title&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div><p>Wait 1-2 minutes, and the post is live!
+Happy blogging!</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/hugo/">Hugo</a>
+        
+            <a href="/tags/github-pages/">Github-Pages</a>
+        
+            <a href="/tags/blog/">Blog</a>
+        
+            <a href="/tags/tutorial/">Tutorial</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Chealsia&#39;s Tech Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+    
+
+            </main>
+        </div>
+        <script type="text/javascript" src="/ts/main.e84a6f23ca15b486634daed3f0f3ca5762a7a26e726a92d1edce231eb6e9db19.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

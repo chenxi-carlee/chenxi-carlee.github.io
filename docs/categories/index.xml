@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Chealsia&#39;s Tech Blog</title>
-        <link>https://chenxi-carlee.github.io/categories/</link>
+        <link>http://localhost:1313/categories/</link>
         <description>Recent content in Categories on Chealsia&#39;s Tech Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://chenxi-carlee.github.io/categories/index.xml" rel="self" type="application/rss+xml" /></channel>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 06 Feb 2026 15:01:06 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>Setup</title>
+            <link>http://localhost:1313/categories/setup/</link>
+            <pubDate>Fri, 06 Feb 2026 15:01:06 +0000</pubDate>
+            <guid>http://localhost:1313/categories/setup/</guid>
+            <description></description>
+        </item></channel>
 </rss>

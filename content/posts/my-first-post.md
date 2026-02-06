@@ -1,8 +1,14 @@
-+++
-date = '2026-02-06T15:01:06Z'
-draft = false
-title = 'My First Post'
-+++
+---
+title: Setting Up My First Tech Blog with Hugo and GitHub Pages
+date: 2026-02-06T15:01:06Z
+tags:
+    - hugo
+    - github-pages
+    - blog
+    - tutorial
+categories:
+    - Setup
+---
 
 Hugo + GitHub Pages
 
