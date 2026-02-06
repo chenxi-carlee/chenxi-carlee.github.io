@@ -1,4 +1,5 @@
 baseURL = 'https://chenxi-carlee.github.io/'
 languageCode = 'en-us'
-title = "Chealsia's Daily Blog"
+title = "Chealsia's Tech Blog"
 theme = 'hugo-theme-stack'
+publishDir = 'docs'  
